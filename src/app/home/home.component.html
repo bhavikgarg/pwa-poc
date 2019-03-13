@@ -1,0 +1,25 @@
+<div class="mat-typography" style="padding: 16px">
+  <div style="text-align:center">
+    <h1>
+      Welcome
+    </h1>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-12" style="text-align:center;">
+      <input type="button" class="button" onclick="window.MyHandler.openAndroidCamera()" value="Fetch Contact" />
+    </div>
+  </div>
+
+  <div class="row" *ngIf = "imagePath">
+    <div class="col-sm-12" style="text-align:center;">
+      <img [src] = "imagePath" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>{{demoText}}</h4>
+    </div>
+  </div>
+</div>
